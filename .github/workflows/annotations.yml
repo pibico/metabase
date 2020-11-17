@@ -1,0 +1,16 @@
+name: Annotations
+
+on: [push, pull_request]
+
+jobs:
+
+  annotations:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Upload dummy annotations
+      uses: yuzutech/annotations-action@v0.1.0
+      if: always()
+      with:
+        input: './eastwood-annotations.json'
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
