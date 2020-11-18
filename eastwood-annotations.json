@@ -1,9 +1,1 @@
-[
-  {
-    "file": "src/metabase/pulse/render/body.clj",
-    "line": 189,
-    "annotation_level": "error",
-    "title": "src/metabase/pulse/render/body.clj",
-    "message": "wrong-arity: Function on var #'metabase.pulse.render.table/render-table called with 3 args, but it is only known to take one of the following args: [color-selector normalized-zero column-names [header & rows]]"
-  }
-]
+[]
